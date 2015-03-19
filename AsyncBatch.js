@@ -1,7 +1,6 @@
 AsyncBatch = function() {
 
-	var asyncCount = 0,
-		requests = [];
+	var requests = [];
 
 	this.add = function(method, params) {
 		requests.push({
