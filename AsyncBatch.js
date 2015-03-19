@@ -12,9 +12,7 @@ AsyncBatch = function() {
 
 	this.run = function(callback) {
 
-		var onSuccess = [];
-
-		asyncCount = 0;
+		var asyncCount = 0;
 
 		var checkAsync = function() {
 			if( ++asyncCount >= requests.length ) {
